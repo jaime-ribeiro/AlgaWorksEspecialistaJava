@@ -20,6 +20,6 @@ public class FormatandoComPrintf {
 
     double peso = 938.22;
     System.out.printf("Peso: %.2f%n",peso);
-    //Dependendo das configurações de linguagem, o separador decimal pode estar "," ao invés de ".", em português aparece "," e inglês aparece ".".
+    //Dependendo das configurações de linguagem, o separador decimal pode estar "," ao invés de ".", em português aparece "," e inglês aparece "."
   } 
 }
