@@ -15,7 +15,7 @@ public class ControlePesoAeronave {
 		int pesoPassageiro = entrada.nextInt();
 		
 		if(pesoTotalPassageiros + pesoPassageiro > pesoMaximo){
-			System.out.prinln("Não pode incluir o passageiro. Peso excederia o máximo");
+			System.out.println("Não pode incluir o passageiro. Peso excederia o máximo");
 			//O continue passa para a próximo repetição
 			//Break e continue sempre são executados no laço mais interno
 			//Se tiver dois, vai passar sempre o mais interno
