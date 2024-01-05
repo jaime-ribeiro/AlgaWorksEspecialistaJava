@@ -5,21 +5,21 @@ public class EstruturaForIntermediario {
   public static void main(String[] args) {
 	Scanner entrada = new Scanner(System.in);
 	
-	System.out.println("Insira um número: ");
-	int numero = entrada.nextInt();
-	int somaDePrimos = 0;
-	
-	for(int numeroPrimo = 1; numeroPrimo <= numero ; numeroPrimo++){
-		
-		if(numero%numeroPrimo==0){
-			soma = numero + soma;
-		}else{
-			System.out.println("O número inserido é ímpar, insira um número par");
-			x--;
+	int num = entrada.nextInt();
+    if(num < 2){
+		System.out.println("O número " + num + " não é primo");
+	}else{
+		double quadrado = Math.sqrt(num);
+		for(int i = 2; i <= quadrado; i++) {
+			if(num % i == 0 ) {
+				System.out.println("O número " + num + " não é primo porque é divisível por " + i);
+				return;
+			}
 		}
-	}
-	
-	System.out.printf("A soma dos números inseridos é: %d%n", soma);
+		if(num > 1) {
+			System.out.println("O número " + num + " é primo");
+		}	
+	}	
   }
 
 }
